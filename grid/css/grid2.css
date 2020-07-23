@@ -1,30 +1,40 @@
-body {
-    background-color: #F5F7F8;
+body{
+    background: #f5f7f8;
 }
 
-#pagina {
+#pagina{
     height: 700px;
     display: grid;
-    grid-template-areas: "" ""
-                        ;
+    grid-template-areas: "cabacera cabacera"
+                        "menu cuerpo"
+                        "menu pie";
+    column-gap: 20px;
+    row-gap: 10px;
+    grid-template-rows: 200px 1fr 100px;
+    /* grid-template-rows: repeat(3, 1fr); */
+    grid-template-columns: 200px 1fr;
 }
 
-header {
-        background-color: blueviolet;
-        grid-area: cabecera;
+header{
+    background-color: firebrick;
+    grid-area: cabacera;
 }
 
-section {
-    background-color: rgb(25, 161, 36);
-    grid-area: cuerpo;
-}
-
-nav {
-    background-color: aquamarine;
+nav{
+    background-color: cadetblue;
     grid-area: menu;
 }
 
-footer {
-    background-color: darkolivegreen;
+section{
+    background-color: mediumorchid;
+    grid-area: cuerpo;
+}
+
+footer{
+    background-color: rgb(107, 107, 206);
     grid-area: pie;
+}
+
+button {
+    background-color: #1bd349;
 }
