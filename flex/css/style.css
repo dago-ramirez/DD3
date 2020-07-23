@@ -1,0 +1,43 @@
+body {
+    background-color: rgb(202, 190, 182);
+
+}
+
+#contenedor-padre {
+    background-color: cadetblue;
+    padding: 3%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: space-evenly; */
+    /* align-items: center; */
+    justify-content: stretch;
+}
+
+.contenedor-hijo {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    margin: 2px;
+    align-items: center;
+    background-color: orange;
+    flex: auto;
+}
+
+#contenedor-hijo1 {
+    background-color: yellowgreen;
+    /* width: 100%; */
+}
+
+#contenedor-hijo2 {
+    background-color: blueviolet;
+    /* width: 100%; */
+}
+
+#contenedor-hijo3 {
+    background-color: aqua;
+    /* width: 100%; */
+}

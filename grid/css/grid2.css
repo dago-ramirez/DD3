@@ -1,0 +1,30 @@
+body {
+    background-color: #F5F7F8;
+}
+
+#pagina {
+    height: 700px;
+    display: grid;
+    grid-template-areas: "" ""
+                        ;
+}
+
+header {
+        background-color: blueviolet;
+        grid-area: cabecera;
+}
+
+section {
+    background-color: rgb(25, 161, 36);
+    grid-area: cuerpo;
+}
+
+nav {
+    background-color: aquamarine;
+    grid-area: menu;
+}
+
+footer {
+    background-color: darkolivegreen;
+    grid-area: pie;
+}
