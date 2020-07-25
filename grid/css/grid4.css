@@ -5,14 +5,14 @@ body {
 
 #main-conatainer {
     display: grid;
-    margin: 10%;
+    margin: 2%;
     grid-template-areas: "header header header"
                         "section1 section1 section2"
                         "footer footer footer";
-    column-gap: 20px;    
+    column-gap: 10px;
+    row-gap: 10px;    
     grid-template-columns: repeat(3 1fr);
-    grid-template-rows: 100px 1fr 80px;
-    gap: 20%;
+    grid-template-rows: 150px 1fr 80px;
 }
 
 #header-container {
@@ -23,11 +23,13 @@ body {
 
 #section-container {
     background-color: rgb(235, 183, 88);
-    /* padding: 6%; */
+    padding: 2%;
     grid-area: section1;
     display: grid;
     grid-template-areas: "item1 item2 "
                         "item3  item3";
+    grid-template-columns: repeat(2 1fr);
+    grid-template-rows: 120px 1fr;
 }
 
 #aside-container {
@@ -43,19 +45,23 @@ body {
 }
 
 #section-container article {
-    padding: 4%;
+    padding: 10%;
+    margin: 1%;
 }
 
-.item-2 {
+.item-1 {
     background-color: rgb(114, 214, 214);
     grid-area: item1;
+    padding: 5%;
 }
 
 .item-2 {
-    background-color: beige;
+    background-color: rgb(101, 121, 158);
     grid-area: item2;
+    padding: 5%;
 }
-.item-2 {
+.item-3 {
     background-color: cyan;
     grid-area: item3;
+    padding: 5%;
 }

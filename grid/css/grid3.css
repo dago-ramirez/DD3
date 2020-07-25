@@ -9,32 +9,32 @@ body {
     grid-template-areas: "header header header"
                         "section1 section1 section2"
                         "footer footer footer";
-    column-gap: 20px;    
+    column-gap: 10px;
+    row-gap: 10px;   
     grid-template-columns: repeat(3 1fr);
-    grid-template-rows: 100px 1fr 80px;
-    /* gap: 20%; */
+    grid-template-rows: 150px 1fr 100px;
 }
 
 #header-container {
-    background-color: rgb(226, 100, 100);
+    background-color: rgba(226, 100, 100, .9);
     padding: 5%;
     grid-area: header;
 }
 
 #section-container {
-    background-color: rgb(235, 183, 88);
-    padding: 6%;
+    background-color: rgba(235, 183, 88, .9);
+    padding: 15%;
     grid-area: section1;
 }
 
 #aside-container {
-    background-color: rgb(83, 97, 143);
-    padding: 8%;
+    background-color: rgba(83, 97, 143, .9);
+    padding: 15%;
     grid-area: section2;
 }
 
 #footer-container {
-    background-color: rgb(81, 48, 112);
+    background-color: rgba(81, 48, 112, .9);
     padding: 3%;
     grid-area: footer;
 }
